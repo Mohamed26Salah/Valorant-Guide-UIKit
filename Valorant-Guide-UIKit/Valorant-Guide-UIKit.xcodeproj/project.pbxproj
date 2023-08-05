@@ -24,6 +24,11 @@
 		ABE5D2D12A7E4D1700F96C16 /* AgentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5D2CF2A7E4D1700F96C16 /* AgentsCollectionViewCell.swift */; };
 		ABE5D2D22A7E4D1700F96C16 /* AgentsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABE5D2D02A7E4D1700F96C16 /* AgentsCollectionViewCell.xib */; };
 		ABE5D2D52A7E50D000F96C16 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = ABE5D2D42A7E50D000F96C16 /* SDWebImageSwiftUI */; };
+		ABE5D2D92A7E7DCA00F96C16 /* MapsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5D2D72A7E7DCA00F96C16 /* MapsTableViewCell.swift */; };
+		ABE5D2DA2A7E7DCA00F96C16 /* MapsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABE5D2D82A7E7DCA00F96C16 /* MapsTableViewCell.xib */; };
+		ABE5D2E52A7E9E1000F96C16 /* AgentDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5D2E42A7E9E1000F96C16 /* AgentDescriptionViewController.swift */; };
+		ABE5D2E72A7E9EA900F96C16 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5D2E62A7E9EA900F96C16 /* Extenstions.swift */; };
+		ABE5D2EA2A7ED0AB00F96C16 /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = ABE5D2E92A7ED0AB00F96C16 /* SwipeCellKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,10 @@
 		ABE5D2CD2A7E4C3700F96C16 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ABE5D2CF2A7E4D1700F96C16 /* AgentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsCollectionViewCell.swift; sourceTree = "<group>"; };
 		ABE5D2D02A7E4D1700F96C16 /* AgentsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentsCollectionViewCell.xib; sourceTree = "<group>"; };
+		ABE5D2D72A7E7DCA00F96C16 /* MapsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsTableViewCell.swift; sourceTree = "<group>"; };
+		ABE5D2D82A7E7DCA00F96C16 /* MapsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsTableViewCell.xib; sourceTree = "<group>"; };
+		ABE5D2E42A7E9E1000F96C16 /* AgentDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDescriptionViewController.swift; sourceTree = "<group>"; };
+		ABE5D2E62A7E9EA900F96C16 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE5D2D52A7E50D000F96C16 /* SDWebImageSwiftUI in Frameworks */,
+				ABE5D2EA2A7ED0AB00F96C16 /* SwipeCellKit in Frameworks */,
 				ABE5D2BD2A7D977700F96C16 /* OptionallyDecodable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +96,7 @@
 				ABE5D29D2A7D872B00F96C16 /* Assets.xcassets */,
 				ABE5D2A22A7D872B00F96C16 /* Info.plist */,
 				ABE5D2CD2A7E4C3700F96C16 /* Constants.swift */,
+				ABE5D2E62A7E9EA900F96C16 /* Extenstions.swift */,
 			);
 			path = "Valorant-Guide-UIKit";
 			sourceTree = "<group>";
@@ -104,6 +115,7 @@
 			children = (
 				ABE5D2C02A7D97D700F96C16 /* HomeViewController.swift */,
 				ABE5D2C62A7E457700F96C16 /* Agents */,
+				ABE5D2D62A7E7DA900F96C16 /* Maps */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -140,10 +152,28 @@
 		ABE5D2C62A7E457700F96C16 /* Agents */ = {
 			isa = PBXGroup;
 			children = (
+				ABE5D2DF2A7E9CA200F96C16 /* AgentViewDescription */,
 				ABE5D2CF2A7E4D1700F96C16 /* AgentsCollectionViewCell.swift */,
 				ABE5D2D02A7E4D1700F96C16 /* AgentsCollectionViewCell.xib */,
 			);
 			path = Agents;
+			sourceTree = "<group>";
+		};
+		ABE5D2D62A7E7DA900F96C16 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				ABE5D2D72A7E7DCA00F96C16 /* MapsTableViewCell.swift */,
+				ABE5D2D82A7E7DCA00F96C16 /* MapsTableViewCell.xib */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		ABE5D2DF2A7E9CA200F96C16 /* AgentViewDescription */ = {
+			isa = PBXGroup;
+			children = (
+				ABE5D2E42A7E9E1000F96C16 /* AgentDescriptionViewController.swift */,
+			);
+			path = AgentViewDescription;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +195,7 @@
 			packageProductDependencies = (
 				ABE5D2BC2A7D977700F96C16 /* OptionallyDecodable */,
 				ABE5D2D42A7E50D000F96C16 /* SDWebImageSwiftUI */,
+				ABE5D2E92A7ED0AB00F96C16 /* SwipeCellKit */,
 			);
 			productName = "Valorant-Guide-UIKit";
 			productReference = ABE5D2912A7D872A00F96C16 /* Valorant-Guide-UIKit.app */;
@@ -197,6 +228,7 @@
 			packageReferences = (
 				ABE5D2BB2A7D977700F96C16 /* XCRemoteSwiftPackageReference "OptionallyDecodable" */,
 				ABE5D2D32A7E50D000F96C16 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				ABE5D2E82A7ED0AB00F96C16 /* XCRemoteSwiftPackageReference "SwipeCellKit" */,
 			);
 			productRefGroup = ABE5D2922A7D872A00F96C16 /* Products */;
 			projectDirPath = "";
@@ -213,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE5D2A12A7D872B00F96C16 /* LaunchScreen.storyboard in Resources */,
+				ABE5D2DA2A7E7DCA00F96C16 /* MapsTableViewCell.xib in Resources */,
 				ABE5D29E2A7D872B00F96C16 /* Assets.xcassets in Resources */,
 				ABE5D2D22A7E4D1700F96C16 /* AgentsCollectionViewCell.xib in Resources */,
 				ABE5D29C2A7D872A00F96C16 /* Main.storyboard in Resources */,
@@ -228,13 +261,16 @@
 			files = (
 				ABE5D2CE2A7E4C3700F96C16 /* Constants.swift in Sources */,
 				ABE5D2B82A7D974900F96C16 /* WeaponsParser.swift in Sources */,
+				ABE5D2E72A7E9EA900F96C16 /* Extenstions.swift in Sources */,
 				ABE5D2B32A7D916900F96C16 /* BundlesParser.swift in Sources */,
 				ABE5D2952A7D872A00F96C16 /* AppDelegate.swift in Sources */,
 				ABE5D2B12A7D914F00F96C16 /* AgentsParser.swift in Sources */,
 				ABE5D2D12A7E4D1700F96C16 /* AgentsCollectionViewCell.swift in Sources */,
+				ABE5D2D92A7E7DCA00F96C16 /* MapsTableViewCell.swift in Sources */,
 				ABE5D2BA2A7D976600F96C16 /* SeasonsParser.swift in Sources */,
 				ABE5D2C12A7D97D700F96C16 /* HomeViewController.swift in Sources */,
 				ABE5D2972A7D872A00F96C16 /* SceneDelegate.swift in Sources */,
+				ABE5D2E52A7E9E1000F96C16 /* AgentDescriptionViewController.swift in Sources */,
 				ABE5D2B62A7D918900F96C16 /* MapsParser.swift in Sources */,
 				ABE5D2AF2A7D910D00F96C16 /* APIHandler.swift in Sources */,
 			);
@@ -472,6 +508,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		ABE5D2E82A7ED0AB00F96C16 /* XCRemoteSwiftPackageReference "SwipeCellKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwipeCellKit/SwipeCellKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -484,6 +528,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = ABE5D2D32A7E50D000F96C16 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		ABE5D2E92A7ED0AB00F96C16 /* SwipeCellKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABE5D2E82A7ED0AB00F96C16 /* XCRemoteSwiftPackageReference "SwipeCellKit" */;
+			productName = SwipeCellKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
