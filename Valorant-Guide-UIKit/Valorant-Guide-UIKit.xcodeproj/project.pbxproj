@@ -20,6 +20,10 @@
 		ABE5D2BA2A7D976600F96C16 /* SeasonsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5D2B92A7D976600F96C16 /* SeasonsParser.swift */; };
 		ABE5D2BD2A7D977700F96C16 /* OptionallyDecodable in Frameworks */ = {isa = PBXBuildFile; productRef = ABE5D2BC2A7D977700F96C16 /* OptionallyDecodable */; };
 		ABE5D2C12A7D97D700F96C16 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5D2C02A7D97D700F96C16 /* HomeViewController.swift */; };
+		ABE5D2CE2A7E4C3700F96C16 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5D2CD2A7E4C3700F96C16 /* Constants.swift */; };
+		ABE5D2D12A7E4D1700F96C16 /* AgentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5D2CF2A7E4D1700F96C16 /* AgentsCollectionViewCell.swift */; };
+		ABE5D2D22A7E4D1700F96C16 /* AgentsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABE5D2D02A7E4D1700F96C16 /* AgentsCollectionViewCell.xib */; };
+		ABE5D2D52A7E50D000F96C16 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = ABE5D2D42A7E50D000F96C16 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,9 @@
 		ABE5D2B72A7D974800F96C16 /* WeaponsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsParser.swift; sourceTree = "<group>"; };
 		ABE5D2B92A7D976600F96C16 /* SeasonsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsParser.swift; sourceTree = "<group>"; };
 		ABE5D2C02A7D97D700F96C16 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ABE5D2CD2A7E4C3700F96C16 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ABE5D2CF2A7E4D1700F96C16 /* AgentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsCollectionViewCell.swift; sourceTree = "<group>"; };
+		ABE5D2D02A7E4D1700F96C16 /* AgentsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgentsCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE5D2D52A7E50D000F96C16 /* SDWebImageSwiftUI in Frameworks */,
 				ABE5D2BD2A7D977700F96C16 /* OptionallyDecodable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +85,7 @@
 				ABE5D2AA2A7D909100F96C16 /* View */,
 				ABE5D29D2A7D872B00F96C16 /* Assets.xcassets */,
 				ABE5D2A22A7D872B00F96C16 /* Info.plist */,
+				ABE5D2CD2A7E4C3700F96C16 /* Constants.swift */,
 			);
 			path = "Valorant-Guide-UIKit";
 			sourceTree = "<group>";
@@ -94,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				ABE5D2C02A7D97D700F96C16 /* HomeViewController.swift */,
+				ABE5D2C62A7E457700F96C16 /* Agents */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -127,6 +137,15 @@
 			path = Parser;
 			sourceTree = "<group>";
 		};
+		ABE5D2C62A7E457700F96C16 /* Agents */ = {
+			isa = PBXGroup;
+			children = (
+				ABE5D2CF2A7E4D1700F96C16 /* AgentsCollectionViewCell.swift */,
+				ABE5D2D02A7E4D1700F96C16 /* AgentsCollectionViewCell.xib */,
+			);
+			path = Agents;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +164,7 @@
 			name = "Valorant-Guide-UIKit";
 			packageProductDependencies = (
 				ABE5D2BC2A7D977700F96C16 /* OptionallyDecodable */,
+				ABE5D2D42A7E50D000F96C16 /* SDWebImageSwiftUI */,
 			);
 			productName = "Valorant-Guide-UIKit";
 			productReference = ABE5D2912A7D872A00F96C16 /* Valorant-Guide-UIKit.app */;
@@ -176,6 +196,7 @@
 			mainGroup = ABE5D2882A7D872A00F96C16;
 			packageReferences = (
 				ABE5D2BB2A7D977700F96C16 /* XCRemoteSwiftPackageReference "OptionallyDecodable" */,
+				ABE5D2D32A7E50D000F96C16 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = ABE5D2922A7D872A00F96C16 /* Products */;
 			projectDirPath = "";
@@ -193,6 +214,7 @@
 			files = (
 				ABE5D2A12A7D872B00F96C16 /* LaunchScreen.storyboard in Resources */,
 				ABE5D29E2A7D872B00F96C16 /* Assets.xcassets in Resources */,
+				ABE5D2D22A7E4D1700F96C16 /* AgentsCollectionViewCell.xib in Resources */,
 				ABE5D29C2A7D872A00F96C16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,10 +226,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE5D2CE2A7E4C3700F96C16 /* Constants.swift in Sources */,
 				ABE5D2B82A7D974900F96C16 /* WeaponsParser.swift in Sources */,
 				ABE5D2B32A7D916900F96C16 /* BundlesParser.swift in Sources */,
 				ABE5D2952A7D872A00F96C16 /* AppDelegate.swift in Sources */,
 				ABE5D2B12A7D914F00F96C16 /* AgentsParser.swift in Sources */,
+				ABE5D2D12A7E4D1700F96C16 /* AgentsCollectionViewCell.swift in Sources */,
 				ABE5D2BA2A7D976600F96C16 /* SeasonsParser.swift in Sources */,
 				ABE5D2C12A7D97D700F96C16 /* HomeViewController.swift in Sources */,
 				ABE5D2972A7D872A00F96C16 /* SceneDelegate.swift in Sources */,
@@ -440,6 +464,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		ABE5D2D32A7E50D000F96C16 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -447,6 +479,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = ABE5D2BB2A7D977700F96C16 /* XCRemoteSwiftPackageReference "OptionallyDecodable" */;
 			productName = OptionallyDecodable;
+		};
+		ABE5D2D42A7E50D000F96C16 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABE5D2D32A7E50D000F96C16 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
