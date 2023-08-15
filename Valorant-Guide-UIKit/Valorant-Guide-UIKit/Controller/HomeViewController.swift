@@ -9,10 +9,7 @@ import UIKit
 import SDWebImage
 import SwipeCellKit
 
-//1-auto scroll problem
-//2-Both Scrolls Interfear with each other
-//3-Navigation Extention is Not Working why ?
-//4-scrollView Height ??
+
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var agentsCollectionView: UICollectionView!
@@ -24,6 +21,7 @@ class HomeViewController: UIViewController {
     private let provider = NetworkAPIProvider()
     var currentPage = 0
     var timer: Timer?
+    var currentIndexPath = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +62,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let agent = agentsData?.data[indexPath.row] {
-//            pushToViewController(modelDTO: AgentDescriptionViewController, identifier: K.viewsControllers.agentDescriptionController, withObject: agent)
+//            pushToViewController(modelDTO: AgentDescriptionViewController.self, identifier: K.viewsControllers.agentDescriptionController)
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             if let destinationViewController = storyboard.instantiateViewController(withIdentifier: K.viewsControllers.agentDescriptionController) as? AgentDescriptionViewController {
                 destinationViewController.agent = agent
@@ -73,13 +71,15 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         }
         
     }
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        print("will IndexPathByElnaggar \(indexPath.row) will currentpage: \(currentPage )")
+        currentPage = indexPath.row - 1
+    }
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         stopAutoScroll()
     }
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let pageWidth = agentsCollectionView.frame.width
-        currentPage = Int(targetContentOffset.pointee.x / pageWidth)
-        //        print("currentPage: \(currentPage)")
         startAutoScroll()
     }
     //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -99,7 +99,6 @@ extension HomeViewController {
     
     @objc func scrollToNextPage() {
         currentPage = (currentPage + 1) % (agentsData?.data.count ?? 1)
-        //        print("scrollToNextPage - currentPage: \(currentPage)")
         let indexPath = IndexPath(row: currentPage, section: 0)
         agentsCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         agentPages.currentPage = currentPage
