@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var agentsCollectionView: UICollectionView!
     @IBOutlet weak var agentPages: UIPageControl!
     @IBOutlet weak var mapsTableView: UITableView!
-    
+    //mo sALAH IS THE BEST
     var agentsData: AgentsParser?
     var mapsData: MapsParser?
     private let provider = NetworkAPIProvider()
