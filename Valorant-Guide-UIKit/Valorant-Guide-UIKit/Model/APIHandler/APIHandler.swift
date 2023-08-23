@@ -43,8 +43,39 @@ class NetworkAPIProvider: APIProvider {
     }
 }
 
+enum Urls {
+    case agents
+    case bundles
+    case maps
+    case weapons
+    case seasons
+    
+    var basePath: String {
+        return "https://valorant-api.com/v1"
+    }
+    
+    var urlString: String {
+        switch self {
+        case .agents:
+            return "\(basePath)/agents"
+        case .bundles:
+            return "\(basePath)/bundles"
+        case .maps:
+            return "\(basePath)/maps"
+        case .weapons:
+            return "\(basePath)/weapons"
+        case .seasons:
+            return "\(basePath)/seasons"
+        }
+    }
+}
+
+//let agentsUrlString = Urls.agents.urlString
+
+
+
 class APIClient {
-    private let baseURL: URL
+    private let baseURL: URL //No
     private let apiProvider: APIProvider
     
     init(baseURL: URL, apiProvider: APIProvider) {
@@ -66,7 +97,21 @@ class APIClient {
                 completion(.failure(error))
             }
         }
-    }// RX swift(MVVM) /
-    
+    }
+    func fetchResourceData<model: Decodable>(modelDTO: model, url: String, completion: @escaping (Result<model, Error>) -> Void){
+        apiProvider.fetchData(for: url) { result in
+            switch result {
+            case .success(let data):
+                do {
+                    let parsedData = try JSONDecoder().decode(model.self, from: data)
+                    completion(.success(parsedData))
+                } catch {
+                    completion(.failure(error))
+                }
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
     
 }

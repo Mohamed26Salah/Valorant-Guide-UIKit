@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABDCE8FE2A8CE4E300C777B0 /* Valorant_Guide_UIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDCE8FD2A8CE4E300C777B0 /* Valorant_Guide_UIKitTests.swift */; };
+		ABDCE9042A8CE4E900C777B0 /* HomeViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDCE8F52A8CE4A100C777B0 /* HomeViewControllerTest.swift */; };
+		ABDCE9062A8CE59300C777B0 /* stub.json in Resources */ = {isa = PBXBuildFile; fileRef = ABDCE9052A8CE59300C777B0 /* stub.json */; };
+		ABDCE9092A8CE68500C777B0 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = ABDCE9082A8CE68500C777B0 /* SDWebImageSwiftUI */; };
+		ABDCE90B2A8CE70B00C777B0 /* Bundle + unitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDCE90A2A8CE70B00C777B0 /* Bundle + unitTest.swift */; };
 		ABE5D2952A7D872A00F96C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5D2942A7D872A00F96C16 /* AppDelegate.swift */; };
 		ABE5D2972A7D872A00F96C16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5D2962A7D872A00F96C16 /* SceneDelegate.swift */; };
 		ABE5D29C2A7D872A00F96C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE5D29A2A7D872A00F96C16 /* Main.storyboard */; };
@@ -31,7 +36,22 @@
 		ABE5D2EA2A7ED0AB00F96C16 /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = ABE5D2E92A7ED0AB00F96C16 /* SwipeCellKit */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		ABDCE8FF2A8CE4E300C777B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABE5D2892A7D872A00F96C16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABE5D2902A7D872A00F96C16;
+			remoteInfo = "Valorant-Guide-UIKit";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		ABDCE8F52A8CE4A100C777B0 /* HomeViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTest.swift; sourceTree = "<group>"; };
+		ABDCE8FB2A8CE4E300C777B0 /* Valorant-Guide-UIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Valorant-Guide-UIKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDCE8FD2A8CE4E300C777B0 /* Valorant_Guide_UIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Valorant_Guide_UIKitTests.swift; sourceTree = "<group>"; };
+		ABDCE9052A8CE59300C777B0 /* stub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stub.json; sourceTree = "<group>"; };
+		ABDCE90A2A8CE70B00C777B0 /* Bundle + unitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle + unitTest.swift"; sourceTree = "<group>"; };
 		ABE5D2912A7D872A00F96C16 /* Valorant-Guide-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Valorant-Guide-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE5D2942A7D872A00F96C16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE5D2962A7D872A00F96C16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +76,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		ABDCE8F82A8CE4E300C777B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDCE9092A8CE68500C777B0 /* SDWebImageSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ABE5D28E2A7D872A00F96C16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,11 +97,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABDCE8FC2A8CE4E300C777B0 /* Valorant-Guide-UIKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABDCE8F52A8CE4A100C777B0 /* HomeViewControllerTest.swift */,
+				ABDCE8FD2A8CE4E300C777B0 /* Valorant_Guide_UIKitTests.swift */,
+				ABDCE9052A8CE59300C777B0 /* stub.json */,
+				ABDCE90A2A8CE70B00C777B0 /* Bundle + unitTest.swift */,
+			);
+			path = "Valorant-Guide-UIKitTests";
+			sourceTree = "<group>";
+		};
+		ABDCE9072A8CE68500C777B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ABE5D2882A7D872A00F96C16 = {
 			isa = PBXGroup;
 			children = (
 				ABE5D2932A7D872A00F96C16 /* Valorant-Guide-UIKit */,
+				ABDCE8FC2A8CE4E300C777B0 /* Valorant-Guide-UIKitTests */,
 				ABE5D2922A7D872A00F96C16 /* Products */,
+				ABDCE9072A8CE68500C777B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				ABE5D2912A7D872A00F96C16 /* Valorant-Guide-UIKit.app */,
+				ABDCE8FB2A8CE4E300C777B0 /* Valorant-Guide-UIKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,6 +228,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		ABDCE8FA2A8CE4E300C777B0 /* Valorant-Guide-UIKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABDCE9012A8CE4E300C777B0 /* Build configuration list for PBXNativeTarget "Valorant-Guide-UIKitTests" */;
+			buildPhases = (
+				ABDCE8F72A8CE4E300C777B0 /* Sources */,
+				ABDCE8F82A8CE4E300C777B0 /* Frameworks */,
+				ABDCE8F92A8CE4E300C777B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABDCE9002A8CE4E300C777B0 /* PBXTargetDependency */,
+			);
+			name = "Valorant-Guide-UIKitTests";
+			packageProductDependencies = (
+				ABDCE9082A8CE68500C777B0 /* SDWebImageSwiftUI */,
+			);
+			productName = "Valorant-Guide-UIKitTests";
+			productReference = ABDCE8FB2A8CE4E300C777B0 /* Valorant-Guide-UIKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		ABE5D2902A7D872A00F96C16 /* Valorant-Guide-UIKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABE5D2A52A7D872B00F96C16 /* Build configuration list for PBXNativeTarget "Valorant-Guide-UIKit" */;
@@ -211,6 +281,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					ABDCE8FA2A8CE4E300C777B0 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = ABE5D2902A7D872A00F96C16;
+					};
 					ABE5D2902A7D872A00F96C16 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -235,11 +309,20 @@
 			projectRoot = "";
 			targets = (
 				ABE5D2902A7D872A00F96C16 /* Valorant-Guide-UIKit */,
+				ABDCE8FA2A8CE4E300C777B0 /* Valorant-Guide-UIKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		ABDCE8F92A8CE4E300C777B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDCE9062A8CE59300C777B0 /* stub.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ABE5D28F2A7D872A00F96C16 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +338,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		ABDCE8F72A8CE4E300C777B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDCE8FE2A8CE4E300C777B0 /* Valorant_Guide_UIKitTests.swift in Sources */,
+				ABDCE9042A8CE4E900C777B0 /* HomeViewControllerTest.swift in Sources */,
+				ABDCE90B2A8CE70B00C777B0 /* Bundle + unitTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ABE5D28D2A7D872A00F96C16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,6 +371,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		ABDCE9002A8CE4E300C777B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABE5D2902A7D872A00F96C16 /* Valorant-Guide-UIKit */;
+			targetProxy = ABDCE8FF2A8CE4E300C777B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		ABE5D29A2A7D872A00F96C16 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -298,6 +399,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		ABDCE9022A8CE4E300C777B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Q8FDFK3WX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salah.12488.Valorant-Guide-UIKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Valorant-Guide-UIKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Valorant-Guide-UIKit";
+			};
+			name = Debug;
+		};
+		ABDCE9032A8CE4E300C777B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Q8FDFK3WX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salah.12488.Valorant-Guide-UIKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Valorant-Guide-UIKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Valorant-Guide-UIKit";
+			};
+			name = Release;
+		};
 		ABE5D2A32A7D872B00F96C16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -471,6 +608,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		ABDCE9012A8CE4E300C777B0 /* Build configuration list for PBXNativeTarget "Valorant-Guide-UIKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABDCE9022A8CE4E300C777B0 /* Debug */,
+				ABDCE9032A8CE4E300C777B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		ABE5D28C2A7D872A00F96C16 /* Build configuration list for PBXProject "Valorant-Guide-UIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -519,6 +665,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		ABDCE9082A8CE68500C777B0 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABE5D2D32A7E50D000F96C16 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		ABE5D2BC2A7D977700F96C16 /* OptionallyDecodable */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ABE5D2BB2A7D977700F96C16 /* XCRemoteSwiftPackageReference "OptionallyDecodable" */;

@@ -161,7 +161,7 @@ extension HomeViewController: UITableViewDataSource, SwipeTableViewCellDelegate 
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mapsData?.data.count ?? 1
+        return mapsData?.data.count ?? 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let mapData = mapsData {
@@ -172,6 +172,7 @@ extension HomeViewController: UITableViewDataSource, SwipeTableViewCellDelegate 
             if let url = URL(string: (mapData.data[indexPath.row].listViewIcon) ) {
                 cell.mapImage.sd_setImage(with: url)
             }
+            
             cell.mapLabel.text = mapData.data[indexPath.row].displayName
             cell.layer.cornerRadius = 10  // Adjust the value as needed
             cell.layer.masksToBounds = true
